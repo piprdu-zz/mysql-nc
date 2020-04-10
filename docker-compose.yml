@@ -3,6 +3,17 @@ version: '3.1'
 
 services:
 
+  web:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8888:80"
+      - "8889:443"
+    networks:
+      - mysql-network
+    depends_on:
+      - db
+        
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -24,6 +35,8 @@ services:
       - 8080:8080
     networks:
       - mysql-network
+    depends_on:
+        - db
 
 #Networks
 networks:

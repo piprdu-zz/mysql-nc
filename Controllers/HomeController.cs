@@ -64,7 +64,9 @@ namespace mysql_nc.Controllers
             
             //InsertData();
             
-            return View();
+            int totalLibros = _context.Book.Count();
+
+            return View(totalLibros);
         }
 
         public IActionResult Privacy()
