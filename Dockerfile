@@ -10,7 +10,6 @@ COPY . ./
 RUN dotnet publish -c Release -o out
 
 EXPOSE 80
-EXPOSE 443
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine
