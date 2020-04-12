@@ -8,3 +8,6 @@ jobs:
       - run:
           name: "docker-compose"
           command: docker-compose up -d --build
+      - run: 
+          name: "install-dotnet and test"
+          command: ./dotnet-install.sh --channel LTS
