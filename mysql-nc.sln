@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mysql-nc", "mysql-nc.csproj", "{16270C37-78AD-4A3F-9BC6-4302C7A68842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-mysql-nc", "test-mysql-nc\test-mysql-nc.csproj", "{C2CF0ADE-E08F-48A5-8C4C-EAD307BDEAEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16270C37-78AD-4A3F-9BC6-4302C7A68842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16270C37-78AD-4A3F-9BC6-4302C7A68842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16270C37-78AD-4A3F-9BC6-4302C7A68842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16270C37-78AD-4A3F-9BC6-4302C7A68842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CF0ADE-E08F-48A5-8C4C-EAD307BDEAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CF0ADE-E08F-48A5-8C4C-EAD307BDEAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CF0ADE-E08F-48A5-8C4C-EAD307BDEAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CF0ADE-E08F-48A5-8C4C-EAD307BDEAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

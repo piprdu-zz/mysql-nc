@@ -3,27 +3,27 @@ version: '3.1'
 
 services:
 
-  web1:
-    #build: .
-    image: afru/mysql-nc_web
-    restart: unless-stopped
-    ports: 
-      - "8888:80"
-    networks:
-      - mysql-network
-    depends_on:
-      - db
+  # web1:
+  #   #build: .
+  #   image: afru/mysql-nc_web
+  #   restart: unless-stopped
+  #   ports: 
+  #     - "8888:80"
+  #   networks:
+  #     - mysql-network
+  #   depends_on:
+  #     - db
 
-  web2:
-    #build: .
-    image: afru/mysql-nc_web
-    restart: unless-stopped
-    ports:
-      - "8889:80"
-    networks:
-      - mysql-network
-    depends_on:
-      - db
+  # web2:
+  #   #build: .
+  #   image: afru/mysql-nc_web
+  #   restart: unless-stopped
+  #   ports:
+  #     - "8889:80"
+  #   networks:
+  #     - mysql-network
+  #   depends_on:
+  #     - db
         
   db:
     image: mysql
