@@ -1,6 +1,4 @@
 # mysql-nc
-test docker compose with mysql and asp net mvc net core
+test docker compose with mysql, asp net mvc net core
 
-# Template:
-[![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
-
+[![CircleCI](https://circleci.com/gh/piprdu/mysql-nc.svg?style=svg)](https://circleci.com/gh/piprdu/mysql-nc)
