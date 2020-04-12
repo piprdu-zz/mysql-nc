@@ -11,6 +11,7 @@ namespace test_mysql_nc
         }
 
         [Test]
+        [TestCase("server=db;database=library;user=root;password=example")]
         [TestCase("server=localhost;database=library;user=root;password=example")]
         public void TestDbConnection(string stringConnection)
         {
