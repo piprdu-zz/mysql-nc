@@ -6,5 +6,5 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Testing"
+          name: "docker-compose"
           command: docker-compose up -d --build
