@@ -9,5 +9,8 @@ jobs:
           name: "docker-compose"
           command: docker-compose up -d --build
       - run: 
-          name: "install-dotnet and test"
-          command: chmod +x ./dotnet-install.sh --channel LTS
+          name: "chmod-dotnet-install"
+          command: chmod +x
+      - run: 
+          name: "chmod-dotnet-install"
+          command: ./dotnet-install.sh --channel LTS
