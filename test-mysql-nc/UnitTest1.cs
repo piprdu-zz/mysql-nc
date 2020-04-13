@@ -11,7 +11,7 @@ namespace test_mysql_nc
         }
 
         [Test]
-        [TestCase("server=db;database=mysql;user=root;password=example")]
+        [TestCase("server=localhost;database=mysql;user=root;password=example")]
         public void TestDbConnection(string stringConnection)
         {
             bool retorno = false;
