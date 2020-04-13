@@ -14,9 +14,9 @@ jobs:
       - run: 
           name: "run-dotnet-install"
           command: ./install-dotnet.sh
-      # - run: 
-      #     name: "chmod-dotnet-install"
-      #     command: chmod +x dotnet-install.sh
-      # - run: 
-      #     name: "run-dotnet-install"
-      #     command: ./dotnet-install.sh --channel LTS
+      - run: 
+          name: "dotnet-restore"
+          command: dotnet restore test-mysql-nc/test-mysql-nc.csproj
+      - run: 
+          name: "dotnet-test"
+          command: dotnet test test-mysql-nc/test-mysql-nc.csproj

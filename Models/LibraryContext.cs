@@ -30,7 +30,7 @@ namespace mysql_nc.Models
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       base.OnModelCreating(modelBuilder);
-
+      
       modelBuilder.Entity<Publisher>(entity =>
       {
         entity.HasKey(e => e.ID);

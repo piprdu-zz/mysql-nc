@@ -5,5 +5,3 @@ sudo apt-get -y install apt-transport-https
 sudo apt-get -y install dotnet-sdk-3.1
 sudo apt-get -y install dotnet-runtime-3.1
 sudo apt-get -y install aspnetcore-runtime-3.1
-dotnet restore test-mysql-nc/test-mysql-nc.csproj
-dotnet test test-mysql-nc/test-mysql-nc.csproj
