@@ -10,7 +10,13 @@ jobs:
           command: docker-compose up -d --build
       - run: 
           name: "chmod-dotnet-install"
-          command: chmod +x dotnet-install.sh
+          command: chmod +x install-dotnet.sh
       - run: 
           name: "run-dotnet-install"
-          command: ./dotnet-install.sh --channel LTS
+          command: ./install-dotnet.sh
+      # - run: 
+      #     name: "chmod-dotnet-install"
+      #     command: chmod +x dotnet-install.sh
+      # - run: 
+      #     name: "run-dotnet-install"
+      #     command: ./dotnet-install.sh --channel LTS
